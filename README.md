@@ -6,7 +6,7 @@ To launch the App:
 -'npm run start' to start the front and backend servers concurrently
 -open up http://localhost:1234 to view the app
 
-Design Notes: 
+Design Notes:<br>
 -I used a MongoDB database and React on the frontend because we were discussing these technologies last week.<br>
 -The runtime environment is Node and the server is built with Express.  I like the express middleware design pattern because I find it easy to troubleshoot and update. 
 -With the short time window I used Parcel as my bundle because it's super fast to set up.  In a larger app that needs more configuration I might use webpack instead. 
