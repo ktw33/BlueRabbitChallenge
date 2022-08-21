@@ -4,7 +4,7 @@ const controller = {};
 controller.getNames = async (req, res, next) => {
   const result = await Name.find({});
   res.locals.names = result;
-  // console.log('inside of get names middleware')
+  // console.log('inside of getNames middleware')
   return next();
 };
 

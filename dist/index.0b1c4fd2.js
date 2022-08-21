@@ -27310,16 +27310,12 @@ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 const ListItems = (props)=>{
-    // const listItemsArray = []; 
-    // for (let i = 0; i < namesArray.length; i++){
-    //   listItemsArray.push(<li>{namesArray[i]}</li>)
-    // }
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
         id: "listItems",
         children: props.name
     }, void 0, false, {
         fileName: "assets/JS/ListItems.js",
-        lineNumber: 8,
+        lineNumber: 4,
         columnNumber: 5
     }, undefined);
 };
