@@ -1,0 +1,44 @@
+body {
+    background-color: lightblue;
+}
+
+#topIcon {
+    border-radius: 20;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 10%;
+    text-align: center;
+}
+
+#root {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    text-align: center;
+}
+
+#header {
+    color: blue;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    text-align: center;
+}
+
+#listItems {
+    text-align:center;
+    color: blue;
+    display: block;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+}
+
+#formDiv {
+    margin-top: 10px;
+}
+
