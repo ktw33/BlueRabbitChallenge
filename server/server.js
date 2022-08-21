@@ -13,12 +13,12 @@ app.use(express.json());
 
 // app.use("/", express.static(path.join(__dirname, "../assets")));
 
-app.get("/addNames", controller.getNames, (req, res) => {
+app.get("/getNames", controller.getNames, (req, res) => {
   return res.status(200).json(res.locals.names)
   //return res.status(200)
 });
 
-app.post("/getNames", controller.addName, (req, res) => {
+app.post("/addNames", controller.addName, (req, res) => {
   return res.status(201).json(res.locals.names);
 });
 

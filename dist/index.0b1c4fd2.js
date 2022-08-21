@@ -2917,7 +2917,7 @@ const App = ()=>{
     const namesArray = [];
     const [list, setList] = (0, _react.useState)([]);
     const fetchNames = ()=>{
-        fetch("http://localhost:3000/addNames").then((response)=>response.json()).then((array)=>{
+        fetch("http://localhost:3000/getNames").then((response)=>response.json()).then((array)=>{
             for(let i = 0; i < array.length; i++)namesArray.push(array[i].name);
             console.log(namesArray);
         }).then(()=>setList(namesArray));
@@ -27376,21 +27376,12 @@ const AddForm = (props)=>{
                     lineNumber: 24,
                     columnNumber: 9
                 }, undefined),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
-                    type: "file",
-                    id: "fileInput",
-                    name: "photo"
-                }, void 0, false, {
-                    fileName: "assets/JS/AddForm.js",
-                    lineNumber: 30,
-                    columnNumber: 9
-                }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
                     onClick: (e)=>addName(name),
                     children: "Add Name"
                 }, void 0, false, {
                     fileName: "assets/JS/AddForm.js",
-                    lineNumber: 31,
+                    lineNumber: 30,
                     columnNumber: 9
                 }, undefined)
             ]

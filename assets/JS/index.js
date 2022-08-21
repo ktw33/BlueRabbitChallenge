@@ -12,7 +12,7 @@ const App = () => {
   const [list, setList] = useState([]);
 
   const fetchNames = () => {
-    fetch("http://localhost:3000/addNames")
+    fetch("http://localhost:3000/getNames")
       .then((response) => response.json())
       .then((array) => {
         for (let i = 0; i < array.length; i++) {

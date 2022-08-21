@@ -27,7 +27,6 @@ const addNames = (newName) => {
           id="name"
           onChange={(e) => setName(e.target.value)}
         ></input>
-        <input type="file" id="fileInput" name="photo"></input>
         <button onClick={(e) => addName(name)}>
           Add Name
         </button>
