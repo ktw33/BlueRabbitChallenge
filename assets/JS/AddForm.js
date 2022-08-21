@@ -2,22 +2,22 @@ import { useState } from "react";
 
 const AddForm = (props) => {
   const [name, setName] = useState("");
-  
-const addName = (newName) => {
-    fetch("http://localhost:3000/addNames", {
-        headers: {
-            "Content-Type": "application/json"
-        },
-        method: 'POST',
-        body: JSON.stringify({
-            name: newName
-        }),
-    })
-}
 
-const addNames = (newName) => {
-    console.log('New Name Added: ' + newName); 
-}
+  const addName = (newName) => {
+    fetch("http://localhost:3000/addNames", {
+      headers: {
+        "Content-Type": "application/json",
+      },
+      method: "POST",
+      body: JSON.stringify({
+        name: newName,
+      }),
+    });
+  };
+
+  const addNames = (newName) => {
+    console.log("New Name Added: " + newName);
+  };
   return (
     <div id="formDiv">
       <form>
@@ -27,9 +27,7 @@ const addNames = (newName) => {
           id="name"
           onChange={(e) => setName(e.target.value)}
         ></input>
-        <button onClick={(e) => addName(name)}>
-          Add Name
-        </button>
+        <button onClick={(e) => addName(name)}>Add Name</button>
       </form>
     </div>
   );
