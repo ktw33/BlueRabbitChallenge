@@ -9,7 +9,7 @@ To launch the App:<br>
 Design Notes:<br>
 -I used a MongoDB database and React on the frontend because we were discussing these technologies last week.<br>
 -The runtime environment is Node and the server is built with Express.  I like the express middleware design pattern because I find it easy to troubleshoot and update. <br>
--With the short time window I used Parcel as my bundle because it's super fast to set up.  In a larger app that needs more configuration I might use webpack instead. <br>
+-With the short time window I used Parcel as my bundler because it's super fast to set up.  In a larger app that needs more configuration I might use webpack instead. <br>
 
 Other Notes: <br>
 -I wasn't able to get to the file upload requirement within the time window but I may go back and add it in. <br>
