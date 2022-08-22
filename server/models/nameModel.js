@@ -3,7 +3,7 @@ const { Schema } = mongoose;
 
 const myURI = "mongodb+srv://Kevin:Pass@cluster0.nizlbdn.mongodb.net/?retryWrites=true&w=majority";
 
-const URI = process.env.MONGO_URI || myURI; 
+// const URI = process.env.MONGO_URI || myURI; 
 
 mongoose.connect(myURI);
 mongoose.connection.once('open', () => console.log('Database connected...'));
